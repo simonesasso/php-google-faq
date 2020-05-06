@@ -6,7 +6,22 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <?php
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="img"><h3>Privacy e termini</h3>
+      </div>
+      <div class="nav-menu">
+        <span class="nav-menu-item">Introduzione</span>
+        <span class="nav-menu-item">Norme privacy</span>
+        <span class="nav-menu-item">Termini di servizio</span>
+        <span class="nav-menu-item">Tecnologie</span>
+        <span class="nav-menu-item faq">Domande frequenti</span>
+      </div>
+    </nav>
+
+    </div>
+    <div class="body-div">
+     <?php
       $domande = [
         [
           "domanda" => "<h2>Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?</h2>",
@@ -49,11 +64,13 @@
         ]
       ];
 
-      foreach ($domande as  $domanda) {
+       foreach ($domande as  $domanda) {
         echo $domanda["domanda"] . "<br>";
         echo $domanda["risposta"] . "<br>";
-        echo "<hr>";
-      }
-     ?>
+
+       }
+      ?>
+    </div>
+
   </body>
 </html>
